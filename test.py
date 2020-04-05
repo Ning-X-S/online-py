@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 import os
 
-os.system("cd /home/work/creat-cli-app")
+os.chdir("/home/work/creat-cli-app")
+os.system("git checkout .")
 os.system("git pull")
 os.system("npm install")
 os.system("npm run build")
+os.chdir("/home/work/static-server")
+os.system("pm2 start ./index.js --name react-app -i 4 -- -port 7001 -path ../creat-cli-app/build")
 
 # with cd('/home/work/creat-cli-app'):
 #   run('git checkout .')
