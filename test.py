@@ -8,8 +8,7 @@ os.system("git checkout .")
 os.system("git pull")
 os.system("npm install")
 os.system("npm run build")
-os.chdir("/home/work/static-server")
-if start:
+if 'start':
   os.system("pm2 delete react-app")
   os.system("pm2 start ./index.js --name react-app -i 4 -- -port 7001 -path ../creat-cli-app/build")
 else:
