@@ -13,7 +13,7 @@ if (len(sys.argv) > 2):
 # 默认走的不删除服务，直接重启一下
 # 默认不更新nod_modules
 def online(server_type = 'restart', update = 'update_modules')
-  os.chdir("/home/work/")
+  os.chdir("/home/work/service/react-service")
   os.system("git checkout .")
   os.system("git pull")
   if update == 'update_modules':
@@ -21,7 +21,7 @@ def online(server_type = 'restart', update = 'update_modules')
   os.chdir("/home/work/service/react-service")
   if server_type == 'start':
     os.system("pm2 delete react-service")
-    os.system("pm2 start ./server.js --name react-service -i 4")
+    os.system("pm2 start start.json --env production")
   else:
     os.system("pm2 restart react-service")
 
