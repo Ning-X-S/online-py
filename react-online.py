@@ -12,7 +12,7 @@ if (len(sys.argv) > 2):
 
 # 默认走的不删除服务，直接重启一下
 # 默认不更新nod_modules
-def online(server_type = 'restart', update = 'update_modules'):
+def online(server_type = 'restart', update = 'update_code'):
   os.chdir("/home/work/creat-cli-app")
   os.system("git checkout .")
   os.system("git pull")
