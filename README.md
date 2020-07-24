@@ -12,10 +12,10 @@
   ```
 
 
-#### Nginx，记一下，每次还得找
+#### Nginx，record
  ```bash
   启动目录：/usr/local/nginx/sbin/nginx
  ```
  ```bash
-  配置目录：/usr/local/nginx/conf
+  配置目录：/usr/local/nginx/conf/nginx.conf
  ```
