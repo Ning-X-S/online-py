@@ -12,10 +12,10 @@
   ```
 
 
-#### Nginx，record
+#### Nginx，record 
  ```bash
-  启动目录：/usr/local/nginx/sbin/nginx
+  start directory：/usr/local/nginx/sbin/nginx
  ```
  ```bash
-  配置目录：/usr/local/nginx/conf/nginx.conf
+  config directory：/usr/local/nginx/conf/nginx.conf
  ```
